@@ -117,6 +117,40 @@ p {
     height: 100%;
   }
 
+/* Navigation bar responsiveness */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 20px; /* Reduce padding on small screens */
+    flex-direction: column;
+    align-items: flex-start; /* Align nav items to the left */
+  }
+
+  .nav-left, .nav-right {
+    flex: 1;
+    margin-left: 0; /* Remove large left margin */
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column; /* Stack nav items vertically */
+    gap: 15px; /* Adjust gap between nav items */
+    width: 100%;
+  }
+
+  .nav-list a {
+    font-size: 18px; /* Make nav text a bit larger for easier clicking */
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .search-form input {
+    width: 100%; /* Make the search input span full width */
+    margin-top: 10px;
+  }
+}
+
+
 /* section underneath navigation */
 .hero {
     height: 80vh;
