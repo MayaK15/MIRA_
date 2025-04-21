@@ -419,3 +419,37 @@ p {
     font-size: 5px;
     border-top: 1px solid #ddd;
 }
+
+@media (max-width: 1024px) {
+  .carousel-item {
+    flex: 0 0 calc(33.333% - 20px); /* Show 3 items */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-items {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+
+  .carousel-item {
+    flex: 0 0 80%; /* Each item takes up 80% of screen */
+    scroll-snap-align: center;
+    margin: 0 10px;
+  }
+
+  .carousel-btn {
+    display: none; /* Hide prev/next buttons on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    flex: 0 0 90%;
+  }
+
+  .product-details {
+    padding: 0 10px;
+  }
+}
