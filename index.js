@@ -1,3 +1,4 @@
+// this was created by help from chatgpt and some class content
 document.addEventListener("DOMContentLoaded", function() {
     const carouselItems = document.querySelector('.carousel-items');
     const prevButton = document.querySelector('.carousel-btn.prev');

@@ -46,7 +46,7 @@ p {
 }
 
 
-/* navigation section */
+/* navigation section created with help from chatgpt to make it adaptable to mobiles*/
 .navbar {
     display: flex;
     justify-content: space-between; /* space between nav and search */
@@ -119,7 +119,7 @@ p {
     height: 100%;
   }
   
-  /* Navigation bar responsiveness */
+  /* Navigation bar responsiveness created with help of chatgpt, really struggled with this one*/
   @media (max-width: 768px) {
     /* Update navbar container */
     .navbar-container {

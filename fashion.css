@@ -48,7 +48,7 @@ p {
     margin-bottom: 0;
 }
 
-/* navigation section */
+/* navigation section helped by chatgpt to try to adapt to mobiles*/
 .navbar {
     display: flex;
     justify-content: space-between; /* space between nav and search */
@@ -121,7 +121,7 @@ p {
     height: 100%;
   }
   
-  /* Navigation bar responsiveness */
+  /* Navigation bar responsiveness created with help from chatgpt, struggled here on my own*/
   @media (max-width: 768px) {
     /* Update navbar container */
     .navbar-container {
@@ -163,7 +163,7 @@ p {
   }
 
 
-/* section underneath navigation */
+/* section underneath navigation got inspo from poosh, goop, and sincerely jules for layout ideas and looked at their codes and brainstormed with chatgpt to get layout i wanted, as well as edited on my own until i liked it */
 .hero {
     position: relative;
     height: 80vh; /* adjust as needed */

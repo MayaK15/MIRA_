@@ -46,7 +46,7 @@ p {
     margin-bottom: 0;
 }
 
-/* navigation section */
+/* navigation section created first through bootstrap and playing around, then had to put into chatgpt to get the responsiveness code so it adapts to mobiles*/
 .navbar {
   display: flex;
   justify-content: space-between; /* space between nav and search */
@@ -119,7 +119,7 @@ html, body {
   height: 100%;
 }
 
-/* Navigation bar responsiveness */
+/* Navigation bar responsiveness got from chatgpt, really struggled with this code*/
 @media (max-width: 768px) {
   /* Update navbar container */
   .navbar-container {
@@ -227,7 +227,7 @@ html, body {
     font-weight: bold;
 }
 
-/* Carousel container for mira's musts section*/
+/* Carousel container for mira's musts section got from bootstrap*/
 .carousel {
     display: flex;
     overflow: hidden;
@@ -242,7 +242,7 @@ html, body {
 }
 
 
-/* Individual carousel items for mira's musts section*/
+/* Individual carousel items for mira's musts section got from bootstrap and when ran into issues got help from chatgpt*/
 .carousel-item {
     flex: 0 0 calc(25% - 20px); /* Adjust this value to control the width of each item */
     text-align: center;
@@ -323,7 +323,7 @@ html, body {
     font-weight: 300;
   }
   
-  /* Grid for layout */
+  /* Grid for layout from inspo from poosh, goop, and sincerely jules websites html code and put into chatgpt when needed help to get the layout i wanted*/
   .fashion-grid {
     display: flex;
     gap: 30px;
@@ -412,7 +412,7 @@ html, body {
     font-weight: 500;
   }
 
-  /* Container for each image */
+  /* Container for each image chat helped with this layout*/
   .images-container {
     display: flex; 
     gap: 20px;
@@ -441,7 +441,7 @@ html, body {
     border-radius: 4px;
   }
   
-  /* Caption styling */
+  /* Caption styling chat helped with explaining how each part impacts how it looks, played with these numbers until i got the layout i wanted*/
   .caption {
     position: absolute; /* Position text on top of the image */
     bottom: 10%; /* Vertically center the caption */
@@ -463,6 +463,7 @@ html, body {
     border-top: 1px solid #ddd;
 }
 
+/* any media elements are from chatgpt, i struggled with making it adaptable to mobile device */
 @media (max-width: 1024px) {
   .carousel-item {
     flex: 0 0 calc(33.333% - 20px); /* Show 3 items */

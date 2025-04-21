@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-/* headers section */
+/* headers section created by playing around and looking up fonts online*/
 h1 {
     text-align: center;
     font-size: 60px;
@@ -46,7 +46,7 @@ p {
     margin-bottom: 0;
 }
 
-/* navigation section */
+/* navigation section created w/ help from chatgpt*/
 .navbar {
     display: flex;
     justify-content: space-between; /* space between nav and search */
@@ -119,7 +119,7 @@ p {
     height: 100%;
   }
   
-  /* Navigation bar responsiveness */
+  /* Navigation bar responsiveness created w/ help from chatgpt*/
   @media (max-width: 768px) {
     /* Update navbar container */
     .navbar-container {
@@ -182,7 +182,7 @@ body {
     color: #000;
   }
   
-  
+   /* inspired by content on website called sincerely jules and her html code, translated it to css through chatgpt and playing around with features until i liked it */
   .section {
     text-align: center;
     margin-bottom: 50px;
@@ -240,6 +240,7 @@ body {
     font-weight: 700;
   }
   
+   /* Adjusted to mobile phone sizing through help w/ chatgpt */
   @media (max-width: 768px) {
     .card {
       max-width: 100%;
