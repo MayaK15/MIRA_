@@ -453,3 +453,27 @@ p {
     padding: 0 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .fashion-grid {
+    flex-direction: column;
+  }
+
+  .main-article,
+  .mini-articles {
+    width: 100%;
+  }
+
+  .mini-article {
+    flex-direction: column;
+  }
+
+  .mini-article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mini-article .article-info {
+    margin-top: 10px;
+  }
+}
