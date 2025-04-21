@@ -54,30 +54,32 @@ p {
     padding: 10px;
     background-color: #ffffff;
   }
-
+  
   .navbar-container {
-    max-width: 1200px;
+    max-width: 100%; /* Take full width */
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 15px; /* Less padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
   }
-
+  
   .nav-left {
     flex: 1;
   }
-
+  
   .nav-right {
     flex-shrink: 0;
-    margin-left: 100px;
+    margin-left: 20px; /* Reduced margin */
   }
   
   .nav-list {
     display: flex;
-    gap: 55px;
+    gap: 15px; /* Reduced gap */
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
   }
   
@@ -115,6 +117,47 @@ p {
     padding: 0;
     width: 100%;
     height: 100%;
+  }
+  
+  /* Navigation bar responsiveness */
+  @media (max-width: 768px) {
+    /* Update navbar container */
+    .navbar-container {
+      flex-direction: row; /* Ensure nav items stay on one line */
+      justify-content: space-between; /* Space out the content */
+      padding: 0 10px; /* Less padding */
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .nav-left, .nav-right {
+      flex: 1;
+      margin-left: 10px; /* Reduced margin */
+    }
+  
+    /* Adjust .nav-list to prevent wrapping */
+    .nav-list {
+      display: flex;
+      flex-direction: row; /* Keep items on one line */
+      gap: 10px; /* Adjust gap */
+      margin: 0;
+      padding: 0;
+      justify-content: flex-start; /* Align to the left */
+      flex-wrap: nowrap; /* Prevent wrapping of items */
+      width: auto; /* Allow width to adjust naturally */
+    }
+  
+    .nav-list a {
+      font-size: 14px; /* Adjust font size */
+      padding: 5px 10px; /* Reduced padding */
+      white-space: nowrap; /* Prevent text from wrapping */
+    }
+  
+    /* Adjust search bar */
+    .search-form input {
+      width: 100px; /* Make search bar smaller */
+      margin-top: 0;
+    }
   }
 
   .hero {
